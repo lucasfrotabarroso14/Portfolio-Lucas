@@ -1,0 +1,458 @@
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  
+
+}
+
+
+.portfolio-wrapper {
+  text-align: center;
+  header {
+    position: fixed;
+    top: 1;
+    margin-top: 1rem;
+    width: 50%;
+    align-items: center;
+    margin-left: 21rem;
+    background: #ffffff;
+    padding: 10px 0;
+    z-index: 100;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adiciona a sombra */
+    
+
+    .navbar {
+      .nav-links {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+          display: inline;
+          margin: 0 10px;
+
+          a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: grey;
+            }
+          }
+        }
+      }
+    }
+  }
+  .another-section{
+    padding-top: 60px; // Adjust this value based on your fixed header's height
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+  }
+  .home-section {
+    padding-top: 60px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, bisque 0%, white);
+    text-align: center;
+    color: #333;
+  }
+  
+  .home-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+ .profile-text-container{
+ 
+  width: 80%;
+  margin: auto;
+  height: 70%;
+  
+ } 
+  
+  
+
+  //----------TEXTO DO HOME --------------------------------------
+
+  
+
+
+  .home-section {
+    
+    
+
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, bisque 0%, white);
+    text-align: center;
+    color: #333;
+  }
+  
+
+  
+  .home-section h1 {
+    font-size: 2rem; /* Tamanho da fonte para telas menores */
+    font-weight: 400; /* Peso da fonte ajustado para 'normal' */
+    line-height: 1.2; /* Ajuste o espaçamento da linha */
+    margin: 0;
+    padding: 0;
+    color: #000;
+    opacity: 1;
+    transform: none;
+    transition: font-size 0.3s ease; /* Suaviza a mudança de tamanho ao alterar o tamanho da tela */
+  }
+  .home-content{ 
+    
+    width: 80%;
+    
+    
+  }
+  
+  /* Estilos específicos para os spans dentro do h1 */
+  .home-section h1 span.font-bold {
+    font-weight: 700; /* Negrito para 'font-bold' */
+  }
+  
+  .home-section h1 span.italic {
+    font-style: italic; /* Itálico para 'italic' */
+  }
+  
+  /* Responsividade para telas maiores */
+  @media (min-width: 768px) {
+    .home-section h1 {
+      font-size: 2.5rem; /* Tamanho do texto ajustado para telas maiores */
+    }
+  }
+  
+  //foto perfil do home
+
+  .profile-image-container{
+    padding-bottom: 2%;
+  }
+  .profile-image {
+    width: 150px; /* Ajuste a largura desejada */
+    height: 150px; /* Ajuste a altura desejada */
+    border-radius: 50%; /* Isso criará o efeito de círculo */
+    border: 5px solid white; /* Ajuste a cor da borda e a largura conforme necessário */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Isso adicionará uma sombra suave */
+    object-fit: cover; /* Isso garantirá que a imagem cubra todo o espaço disponível */
+    display: block; /* Isso garante que a imagem não seja inline */
+    margin: 0 auto; /* Isso centraliza a imagem horizontalmente */
+    position: relative; /* Isso permitirá posicionar a mão de emoji absolutamente em relação a esta imagem */
+    z-index: 1; /* Isso coloca a imagem acima do fundo */
+  }
+  .home-section .profile-image {
+    border-radius: 50%;
+    
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+  }
+  //--------------------------SESSAO SOBRE--------------------------------
+  .about-section {
+    padding: 60px 0; /* Ajuste o padding conforme necessário */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    color: #333; /* Cor do texto */
+    text-align: left;
+    max-width: 800px; /* Largura máxima da seção */
+    margin: auto; /* Centraliza a seção */
+    
+  }
+  
+  .about-section h1 {
+    font-family: 'Arial', sans-serif; /* Fonte mais próxima à da imagem */
+    font-size: 4rem; /* Tamanho da fonte para o título */
+    font-weight: bold; /* Peso da fonte para o título */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+    color: #333;
+  }
+  
+  .about-section p {
+    font-family: 'Arial', sans-serif; /* Fonte mais próxima à da imagem */
+    font-size: 1rem; /* Tamanho da fonte para o parágrafo */
+    font-weight: normal; /* Peso da fonte para o parágrafo */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #555; /* Cor do texto um pouco mais suave que o preto */
+  }
+//---------------------------------projetos-------------------------------------
+  .projetos-card app-projetos-section{
+    margin:1rem;
+    
+  }
+  .projetos-card{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+//------------------------------------projetos--------------------------------------
+  .projetos-container h1 {
+    font-family: 'Arial', sans-serif; /* Fonte mais próxima à da imagem */
+    font-size: 4rem; /* Tamanho da fonte para o título */
+    font-weight: bold; /* Peso da fonte para o título */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+    color: #333;
+  }
+
+  //------------------------------------------------------------- Skills
+  .skills-section {
+    padding: 10px 0;
+    text-align: center;
+    padding-top: 60px; // Adjust this value based on your fixed header's height
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin: 4rem;
+  }
+  
+  .skills-section h1 {
+    font-size: 2.5rem;
+    color: #333; /* Cor do título */
+    margin-bottom: 30px; /* Aumente o espaço abaixo do título se necessário */
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens na linha */
+    gap: 10px; /* Aumente o espaço entre os itens */
+  }
+  
+  .skill-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* Cor de fundo para cada tag de habilidade */
+    color: #333; /* Cor do texto */
+    padding: 12px 24px; /* Aumente o espaçamento interno */
+    font-size: 1.3rem;
+    font-weight: 500; /* Peso da fonte */
+    border: 1px solid #e1e1e1; /* Borda sutil para cada tag */
+    border-radius: 25px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra mais sutil */
+    transition: transform 0.2s; /* Animação suave para o hover */
+    cursor: pointer;
+    text-transform: capitalize; /* Estilo de texto com a primeira letra maiúscula */
+  }
+  
+  .skill-tag:hover {
+    transform: translateY(-2px); /* Efeito de levitação mais sutil no hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Sombra um pouco mais pronunciada no hover */
+  }
+  //------------------------------------------------------------->linha do tempo abaixo
+
+
+
+//------------------------------------------
+
+
+.contact-section {
+    padding-top: 60px; // Adjust this value based on your fixed header's height
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Cor de fundo da seção */
+    color: #333; /* Cor do texto */
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem; /* Tamanho do título */
+    margin-bottom: 1rem; /* Espaçamento abaixo do título */
+    color: #000; /* Cor do título */
+  }
+  
+  .contact-section p {
+    font-size: 1.25rem; /* Tamanho do texto */
+    margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
+  }
+  
+  .contact-section a {
+    color: #007bff; /* Cor dos links */
+    text-decoration: none; /* Remover sublinhado */
+  }
+  
+  .contact-section a:hover {
+    text-decoration: underline; /* Sublinhar ao passar o mouse */
+  }
+  
+
+
+  //-----------------------------------------------------botoes linkedin e github
+
+  .social-icons {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center; /* Centraliza os botões na horizontal */
+    gap: 10px; /* Espaço entre os botões */
+  }
+  
+  .social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px; /* Tamanho do botão */
+    height: 65px; /* Tamanho do botão */
+    border-radius: 50%; /* Torna o botão redondo */
+    border: #cccccc; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para os botões */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 2s; /* Transição suave da cor de fundo */
+  }
+  
+  .social-button svg {
+    width: 35px; /* Tamanho do ícone */
+    height: 35px; /* Tamanho do ícone */
+    fill: #fff; /* Cor do ícone */
+  }
+  
+  .social-button.github {
+    background-color: rgb(53, 49, 49); /* Cor de fundo do botão do GitHub */
+  }
+  
+  .social-button.linkedin {
+    background-color: #023cb7; /* Cor de fundo do botão do LinkedIn */
+  }
+  
+  .social-button:hover {
+    opacity: 0.9; /* Efeito de opacidade ao passar o mouse */
+  }
+}
+  
+
+
+ 
+.button {
+  --width: 120px;
+  --height: 63px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: rgb(51, 51, 51);
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 1.4em;
+  font-family: "Arial";
+  transition: background 0.3s;
+}
+
+.button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: var(--tooltip-color);
+  font-size: 0.9rem;
+  color: #111;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--tooltip-color);
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.button::after,.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0
+}
+
+.text,.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  background: rgb(63, 63, 64);
+}
+
+.button:hover .text {
+  top: -100%;
+}
+
+.button:hover .icon {
+  top: 0;
+}
+
+.button:hover:before,.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
