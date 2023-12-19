@@ -12,18 +12,21 @@ body, html {
 .portfolio-wrapper {
   text-align: center;
   header {
-    position: fixed;
-    top: 1;
-    margin-top: 1rem;
-    width: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 21rem;
-    background: #ffffff;
+    width: 50%; /* Largura do cabeçalho */
     padding: 10px 0;
-    z-index: 100;
+    background: #ffffff;
     border-bottom: 1px solid #cccccc;
     border-radius: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adiciona a sombra */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    left: 50%; /* Posição horizontal */
+    transform: translateX(-50%); /* Desloca para a esquerda metade da sua própria largura */
+    z-index: 100;
+    margin-top: 2%;
     
 
     .navbar {
@@ -43,6 +46,8 @@ body, html {
             color: #333;
             font-weight: 500;
             transition: color 0.3s ease;
+            font-size: 16px; /* Tamanho de fonte inicial */
+            padding: 10px 5px;;
 
             &:hover {
               color: grey;

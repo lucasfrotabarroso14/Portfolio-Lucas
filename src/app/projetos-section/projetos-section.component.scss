@@ -8,6 +8,12 @@
 
 
 }
+.project-content {
+  overflow: hidden; /* Isso vai cortar qualquer conteúdo que exceda o tamanho do container */
+  /* Aqui você pode definir outras propriedades como altura e largura se necessário */
+}
+
+
 @media (max-width: 1024px) { /* Ajuste para telas médias */
     .projetos-container {
       grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
@@ -31,8 +37,15 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  
+  .detalhes-projeto {
+    overflow: auto; /* Adiciona rolagem ao conteúdo excedente */
+    max-height: 50%; /* Define a altura máxima para o conteúdo */
+    /* Seu código existente */
+}
   .article-wrapper:hover {
     -webkit-box-shadow: 10px 10px 0 bisque, 20px 20px 0 black;
     box-shadow: 10px 10px 0 bisque, 20px 20px 0 black;
@@ -60,6 +73,7 @@
 
   
   }
+ 
   
   .rounded-lg {
    /* class tailwind */
