@@ -1,12 +1,9 @@
-.projetos-container{
+.projetos-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    display: grid;
-    gap: 10%
-    
-
-
+    gap: 10%; /* Isso pode ser muito grande, considere usar um valor em pixels ou ems */
+    /* Remova a propriedade grid-template-columns */
 }
 .project-content {
   overflow: hidden; /* Isso vai cortar qualquer conteúdo que exceda o tamanho do container */
@@ -40,6 +37,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 auto;
   }
   .detalhes-projeto {
     overflow: auto; /* Adiciona rolagem ao conteúdo excedente */

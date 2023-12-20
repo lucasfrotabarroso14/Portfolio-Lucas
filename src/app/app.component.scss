@@ -7,15 +7,17 @@ body, html {
   
 
 }
-
+// --------------------------HEADER------------------------------------------
 
 .portfolio-wrapper {
-  text-align: center;
+ 
+  
+
   header {
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%; /* Largura do cabeçalho */
     padding: 10px 0;
     background: #ffffff;
     border-bottom: 1px solid #cccccc;
@@ -23,23 +25,30 @@ body, html {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     position: fixed;
     top: 0;
-    left: 50%; /* Posição horizontal */
-    transform: translateX(-50%); /* Desloca para a esquerda metade da sua própria largura */
+    left: 50%; 
+    transform: translateX(-50%);
     z-index: 100;
-    margin-top: 2%;
+    margin-top: 1%;
+    width: 50%; //QUERO QUE QUANDO FOR PARA TELA MENOR ELE FIQUE 100% COMO POSSO FAZER ISSO?
+    
+    
+    
     
 
     .navbar {
+      
       .nav-links {
         list-style-type: none;
         padding: 0;
         margin: 0;
         display: flex;
         justify-content: center;
+        
 
         li {
           display: inline;
           margin: 0 10px;
+          
 
           a {
             text-decoration: none;
@@ -47,7 +56,8 @@ body, html {
             font-weight: 500;
             transition: color 0.3s ease;
             font-size: 16px; /* Tamanho de fonte inicial */
-            padding: 10px 5px;;
+            padding: 10px 5px;
+            
 
             &:hover {
               color: grey;
@@ -57,14 +67,31 @@ body, html {
       }
     }
   }
-  .another-section{
-    padding-top: 60px; // Adjust this value based on your fixed header's height
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: white;
+ 
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // --------------------------------------------------------------------
+  .another-section {
+    padding-top: 60px; /* Ajuste com base na altura do cabeçalho fixo */
+    padding-bottom: 60px; /* Espaço no fundo */
   }
   .home-section {
     padding-top: 60px;
@@ -76,6 +103,9 @@ body, html {
     background: linear-gradient(to bottom, bisque 0%, white);
     text-align: center;
     color: #333;
+  }
+  .home-section, .about-section, .skills-section, .experience-section, .contact-section {
+    margin-top: 100px; /* Adicione mais espaço se necessário */
   }
   
   .home-section .container {
@@ -202,23 +232,53 @@ body, html {
     color: #555; /* Cor do texto um pouco mais suave que o preto */
   }
 //---------------------------------projetos-------------------------------------
-  .projetos-card app-projetos-section{
-    margin:1rem;
-    
-  }
-  .projetos-card{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-  }
-//------------------------------------projetos--------------------------------------
-  .projetos-container h1 {
-    font-family: 'Arial', sans-serif; /* Fonte mais próxima à da imagem */
-    font-size: 4rem; /* Tamanho da fonte para o título */
-    font-weight: bold; /* Peso da fonte para o título */
-    margin-bottom: 1rem; /* Espaço abaixo do título */
-    color: #333;
-  }
+app-card-project {
+  margin: 1rem; /* Isso adiciona um espaçamento ao redor de cada cartão */
+}
+.another-section h1 {
+  font-family: 'Arial', sans-serif; /* Fonte mais próxima à da imagem */
+  font-size: 4rem; /* Tamanho da fonte para o título */
+  font-weight: bold; /* Peso da fonte para o título */
+  margin-bottom: 1rem; /* Espaço abaixo do título */
+  color: #333;
+}
+.projetos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em; /* Espaço entre os elementos filhos */
+  padding: 2em; /* Espaço dentro do contêiner */
+  width: 100%;
+}
+
+
+.article-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2.5em;
+  padding: 0 1em; /* Preenchimento lateral que escala com o tamanho da fonte */
+}
+
+
+.projetos-card {
+  display: flex;
+  flex-wrap: wrap; /* Isso permite que os cartões se ajustem verticalmente quando não houver espaço suficiente horizontalmente */
+  justify-content: center; /* Isso centraliza os cartões horizontalmente */
+  gap: 1rem; /* Isso adiciona um espaçamento entre os cartões */
+}
+app-card-project {
+  width: 100%;
+  
+ 
+}
+.home-section, .about-section, .skills-section, .experience-section, .contact-section {
+  padding-top: 100px; /* Este valor deve ser igual ou maior que a altura do cabeçalho */
+}
+
+
+
+/* Se app-card-project tem estilos próprios, eles devem garantir que o componente não exceda a largura do contêiner */
 
   //------------------------------------------------------------- Skills
   .skills-section {
@@ -461,3 +521,16 @@ body, html {
 .button:hover:before {
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
 }
+
+
+
+@media (max-width: 480px) {
+  /* Para telas menores como smartphones */
+  .portfolio-wrapper header {
+    width: 100%; /* Faz o cabeçalho ocupar toda a largura */
+    left: 0; /* Alinha o cabeçalho à esquerda */
+    transform: none; /* Remove a transformação */
+  }
+  /* Aqui você pode ajustar o tamanho da fonte e outros estilos para os links */
+}
+

@@ -62,6 +62,7 @@
     
   </section>
   <!-- ---------------------------------------SESSAO----------------------------------------------- -->
+  
   <section id="about" class="about-section">
     <h1>Sobre mim</h1>
     <p>Sou desenvolvedor de software apaixonado por tecnologia e inovação, com especialidade na linguagem Python e seus frameworks Django e Flask. Movido pela convicção de que a excelência vem com a prática contínua, estou sempre em busca de aprimorar minhas habilidades e expandir meu conhecimento. Minha paixão pela tecnologia e inovação me impulsiona a enfrentar novos desafios, absorver novos conhecimentos e técnicas que aprimorem minha expertise. Estou comprometido em evoluir constantemente, contribuindo de forma eficaz em projetos inovadores.</p>
@@ -72,11 +73,15 @@
 
     
     <div class="projetos-container">
-      <h1>Principais Projetos</h1>
+      <h1>Principais Projetos Pessoais:</h1>
 
       
       <div class="projetos-card">
-        <app-projetos-section></app-projetos-section>
+        <app-card-project [img]="imgProjeto01" [nomeProjeto]="nomeProjeto01" [descricaoDoProjeto]="descricaoDoProjeto01"></app-card-project>
+
+        <app-card-project [img]="imgProjeto02" [nomeProjeto]="nomeProjeto02" [descricaoDoProjeto]="descricaoDoProjeto02"></app-card-project>
+
+        
       </div>
      
     </div>
