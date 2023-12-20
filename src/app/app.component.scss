@@ -14,7 +14,7 @@ body, html {
   
 
   header {
-    
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -527,9 +527,12 @@ app-card-project {
 @media (max-width: 480px) {
   /* Para telas menores como smartphones */
   .portfolio-wrapper header {
+    position: fixed;
     width: 100%; /* Faz o cabeçalho ocupar toda a largura */
     left: 0; /* Alinha o cabeçalho à esquerda */
     transform: none; /* Remove a transformação */
+    
+    
   }
   /* Aqui você pode ajustar o tamanho da fonte e outros estilos para os links */
 }
