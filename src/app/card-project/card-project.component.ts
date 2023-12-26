@@ -10,10 +10,18 @@ export class CardProjectComponent {
   @Input() img !: string 
   @Input() nomeProjeto!:string
   @Input() descricaoDoProjeto !: string
+  dialog !: boolean 
 
   constructor(){
 
   }
+
+  openOrCloseDialog(){
+    this.dialog = !this.dialog
+    console.log("console ligou");
+    
+  }
+
   
   
 

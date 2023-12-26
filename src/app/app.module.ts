@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { CardProjectComponent } from './card-project/card-project.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { CardProjectComponent } from './card-project/card-project.component';
 
     TimelineComponent,
     CardProjectComponent,
+    DialogComponent,
     
   ],
   imports: [
