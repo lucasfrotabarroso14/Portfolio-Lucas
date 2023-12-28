@@ -248,7 +248,6 @@ app-card-project {
   align-items: center;
   justify-content: center;
   gap: 2em; /* Espaço entre os elementos filhos */
-  padding: 2em; /* Espaço dentro do contêiner */
   width: 100%;
 }
 
@@ -525,6 +524,7 @@ app-card-project {
 
 
 @media (max-width: 480px) {
+  
   /* Para telas menores como smartphones */
   .portfolio-wrapper header {
     position: fixed;
@@ -535,7 +535,9 @@ app-card-project {
     
     
     
+    
   }
+
   .portfolio-wrapper header .navbar .nav-links li {
     margin-left: 5px; /* Reduce margin between links */
     

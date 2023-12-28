@@ -174,8 +174,8 @@
     .article-wrapper {
       width: 90%; /* Adjust the width to suit mobile screens */
       height: auto; /* Make the height automatic to contain the content */
-      // padding: 2%; /* Adjust padding to ensure content is not too squeezed */
-      margin-right:20%; /* Provide some top and bottom margin */
+
+
       box-shadow: 5px 5px 0 bisque, 10px 10px 0 black; /* Reduce the shadow size for a cleaner look */
     }
   
@@ -217,6 +217,7 @@
 
     transform: translate(0, 0);
 }
+
     
   }
   
