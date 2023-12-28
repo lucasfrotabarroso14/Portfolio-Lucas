@@ -528,11 +528,21 @@ app-card-project {
   /* Para telas menores como smartphones */
   .portfolio-wrapper header {
     position: fixed;
-    width: 100%; /* Faz o cabeçalho ocupar toda a largura */
+    width: 90%; /* Faz o cabeçalho ocupar toda a largura */
     left: 0; /* Alinha o cabeçalho à esquerda */
     transform: none; /* Remove a transformação */
     
     
+    
+  }
+  .portfolio-wrapper header .navbar .nav-links li {
+    margin-left: 5px; /* Reduce margin between links */
+    
+  }
+  
+  .portfolio-wrapper header .navbar .nav-links li a {
+    font-size: 14px; /* Reduce font size to fit more links */
+    padding: 0px; /* Adjust padding to reduce spacing */
   }
   /* Aqui você pode ajustar o tamanho da fonte e outros estilos para os links */
 }
