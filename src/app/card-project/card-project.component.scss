@@ -168,3 +168,55 @@
     height: 40%;
     background: gray;
   }
+
+
+  @media (max-width: 480px) {
+    .article-wrapper {
+      width: 90%; /* Adjust the width to suit mobile screens */
+      height: auto; /* Make the height automatic to contain the content */
+      padding: 2%; /* Adjust padding to ensure content is not too squeezed */
+      margin: 10px auto; /* Provide some top and bottom margin */
+      box-shadow: 5px 5px 0 bisque, 10px 10px 0 black; /* Reduce the shadow size for a cleaner look */
+    }
+  
+    .project-info {
+      padding: 5px; /* Reduce padding inside the project info */
+    }
+  
+    .project-title {
+      font-size: 1.5em; /* Reduce the font size for the project title */
+    }
+  
+    .tags {
+      grid-template-columns: repeat(2, 1fr); /* Adjust to two columns for the tags */
+      gap: 10px; /* Reduce the gap between tags */
+    }
+  
+    .project-type {
+      font-size: 0.9em; /* Reduce the font size for project types */
+      padding: 0.2em 0.5em; /* Adjust padding for the tags */
+    }
+  
+    .container-project {
+      height: 30%; /* Adjust the height of the project image container */
+    }
+  
+    .detalhes-projeto {
+      max-height: 60%; /* Increase the max-height for project details if needed */
+    }
+    .article-wrapper:hover {
+      -webkit-box-shadow: 10px 10px 0 bisque, 20px 20px 0 black;
+      box-shadow: 10px 10px 0 bisque, 20px 20px 0 black;
+      border-color: #050606;
+      -webkit-transform: translate(-20px, -20px);
+      -ms-transform: translate(-20px, -20px);
+      transform: translate(-20px, -20px);
+    }
+    .article-wrapper:not(:hover):not(:active) {
+    box-shadow: none;
+    
+    transform: translate(0, 0);
+}
+    
+  }
+  
