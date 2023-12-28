@@ -91,6 +91,45 @@
     border: none;
     box-shadow: 0 1px 2px 0 rgba(30, 21, 21, 0.05);
   }
+
+  button.dismiss:hover{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-color: #aaa; /* Darker border */
+  }
+  button.history {
+    padding: 10px 20px;
+    border: none;
+    background-color: #000; /* Black */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  /* Hover effect for the Github button */
+  button.history:hover {
+    background-color: #333; /* Lighter black */
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-color: #aaa; /* Darker border */
+  }
+  
+  
+button.track {
+  padding: 10px 20px;
+  border: 2px solid #ddd; /* Slightly visible border */
+  background-color: #fff; /* White */
+  color: black;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transitions for shadow and border */
+}
+
+/* Hover effect for the Testar button */
+button.track:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border-color: #aaa; /* Darker border */
+}
+
+  
   
   .track {
     display: inline-flex;
