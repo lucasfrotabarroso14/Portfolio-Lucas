@@ -1,16 +1,18 @@
 <div class="card"> 
     <button class="dismiss" (click)="openOrCloseDialog()"  type="button">×</button> 
     <div class="header"> 
-      <div class="image">
+      <div class="icon">
         
-        </div> 
+      </div>
         <div class="content">
            <span class="title">Visualizar Projeto</span> 
            <p class="message">Clique no botão para visualizar o Projeto</p> 
            </div> 
            <div class="actions">
-              <button class="history" type="button">Github</button> 
-              <button class="track" type="button">Testar</button> 
+            
+              <button class="history"
+               type="button" (click)="acessarGithub()">Github</button> 
+              <button *ngIf="linkVercel"  class="track" type="button" (click)="acessarVercel()">Testar</button> 
               </div> 
               </div> 
               </div>

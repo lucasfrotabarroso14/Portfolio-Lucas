@@ -25,7 +25,7 @@
   </article>
   <div *ngIf="dialog" class="dialog-overlay">
     <div class="dialog-container">
-        <app-dialog (closeDialog)="openOrCloseDialog()"></app-dialog>
+        <app-dialog [linkVercel]="linkVercelFilho" [linkGithub]=linkGithubFilho (closeDialog)="openOrCloseDialog()"></app-dialog>
     </div>
 </div>
   

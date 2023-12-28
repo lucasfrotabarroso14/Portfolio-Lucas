@@ -11,6 +11,8 @@ export class CardProjectComponent {
   @Input() nomeProjeto!:string
   @Input() descricaoDoProjeto !: string
   dialog !: boolean 
+  @Input() linkGithubFilho !: string
+  @Input() linkVercelFilho !: string
 
   constructor(){
 
@@ -21,6 +23,7 @@ export class CardProjectComponent {
     console.log("console ligou");
     
   }
+
 
   
   

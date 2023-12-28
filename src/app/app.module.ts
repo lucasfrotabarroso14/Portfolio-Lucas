@@ -10,6 +10,7 @@ import { DialogComponent } from './dialog/dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
+    
 
     TimelineComponent,
     CardProjectComponent,

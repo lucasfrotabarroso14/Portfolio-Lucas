@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-dialog',
@@ -8,11 +8,23 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class DialogComponent {
   @Output() closeDialog = new EventEmitter()
 
+  @Input() linkGithub !: string
+  @Input() linkVercel !: string
+
 
   openOrCloseDialog(){
     this.closeDialog.emit()
     console.log("evento");
     
   }
+  acessarVercel(){
+    window.open(this.linkVercel)
+  }
+  acessarGithub(){
+    window.open(this.linkGithub)
+    
+    
+  }
+
 
 }
