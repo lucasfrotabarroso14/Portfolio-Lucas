@@ -222,6 +222,8 @@ body, html {
     font-weight: bold; /* Peso da fonte para o título */
     margin-bottom: 1rem; /* Espaço abaixo do título */
     color: #333;
+    margin-left: 0.8em;
+    
   }
   
   .about-section p {
@@ -229,7 +231,7 @@ body, html {
     font-size: 1rem; /* Tamanho da fonte para o parágrafo */
     font-weight: normal; /* Peso da fonte para o parágrafo */
     line-height: 1.6; /* Espaçamento entre linhas */
-    color: #555; /* Cor do texto um pouco mais suave que o preto */
+
   }
 //---------------------------------projetos-------------------------------------
 app-card-project {
@@ -548,11 +550,13 @@ app-card-project {
     padding: 0px; /* Adjust padding to reduce spacing */
   }
   
+  
   .about-section p {
    margin: 1.5em;
   }
   
-
+  
+  
   
   /* Aqui você pode ajustar o tamanho da fonte e outros estilos para os links */
 }
