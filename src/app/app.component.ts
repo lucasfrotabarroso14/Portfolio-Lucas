@@ -1,5 +1,8 @@
 // app.component.ts
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { saveAs } from 'file-saver';
+
 
 @Component({
   selector: 'app-root',
@@ -7,14 +10,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(private http : HttpClient) {}
 
   //------------PROJETO 01 Task Manager------------------------------------------------------
   imgProjeto01 : string = "../assets/task-manager.png" 
   nomeProjeto01 ="Task Hub"
   descricaoDoProjeto01 = "<p>O <strong>Task Hub</strong> é uma aplicação <strong>Full-Stack</strong> desenvolvida de um gerenciador de tasks. No Front-End, utilizei <strong>Angular</strong> para criar uma interface dinâmica, enquanto no Back-End, implementei soluções robustas utilizando <strong>Django</strong> com <strong>Python</strong></p>"
   linkGithubProjeto01 : string ="https://github.com/lucasfrotabarroso14/Task-Manager-Rpg-Back"
-  // linkVercelProjeto01 : string="https://task-manager-rpg-frontend.vercel.app/"
-  linkVercelProjeto01 : string=""
+  linkVercelProjeto01 : string="https://task-manager-rpg-frontend.vercel.app/"
+  
   tagsProjeto01 : Array<string> = ["Back-end","Front-End","Python","JavaScript"]
   // tags : Array<string> = ["teste","teste","teste","teste"]
 
@@ -31,12 +35,20 @@ export class AppComponent {
 
 
 
+
   title(title: any) {
     throw new Error('Method not implemented.');
   }
 
   scrollToSection(sectionId: string): void {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  downloadCV() {
+    const url = '../assets/curriculo-Lucas.pdf'; // Substitua pela URL do seu currículo
+    this.http.get(url, { responseType: 'blob' }).subscribe(blob => {
+      saveAs(blob, 'curriculo-lucas.pdf');
+    });
   }
 }
 
