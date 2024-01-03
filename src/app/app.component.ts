@@ -10,8 +10,8 @@ export class AppComponent {
 
   //------------PROJETO 01 Task Manager------------------------------------------------------
   imgProjeto01 : string = "../assets/task-manager.png" 
-  nomeProjeto01 ="Task Manager"
-  descricaoDoProjeto01 = "<p>O <strong>Task Manager</strong> é uma aplicação <strong>Full-Stack</strong> desenvolvida de um gerenciador de tasks. No Front-End, utilizei <strong>Angular</strong> para criar uma interface dinâmica, enquanto no Back-End, implementei soluções robustas utilizando <strong>Django</strong> com <strong>Python</strong></p>"
+  nomeProjeto01 ="Task Hub"
+  descricaoDoProjeto01 = "<p>O <strong>Task Hub</strong> é uma aplicação <strong>Full-Stack</strong> desenvolvida de um gerenciador de tasks. No Front-End, utilizei <strong>Angular</strong> para criar uma interface dinâmica, enquanto no Back-End, implementei soluções robustas utilizando <strong>Django</strong> com <strong>Python</strong></p>"
   linkGithubProjeto01 : string ="https://github.com/lucasfrotabarroso14/Task-Manager-Rpg-Back"
   // linkVercelProjeto01 : string="https://task-manager-rpg-frontend.vercel.app/"
   linkVercelProjeto01 : string=""
