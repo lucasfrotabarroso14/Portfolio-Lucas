@@ -38,7 +38,7 @@ nomeProjeto03 ="Virtual Bank"
 descricaoDoProjeto03 = "<p>O <strong>VirtualBank</strong> é um sistema <strong>Back-End</strong> desenvolvido em <strong>Go</strong> para um banco virtual. Permitindo que os usuários realizem operações como cadastro, transações financeiras, estabelecimento de metas e acompanhamento do seu patrimônio. o app ainda está em desenvolvimento.</p>"
 linkGithubProjeto03 : string ="https://github.com/lucasfrotabarroso14/VirtualBank-Backend.git"
 
-tagsProjeto03 : Array<string> = ["Back-end","Go","API"]
+tagsProjeto03 : Array<string> = ["Back-end","Go","API","Docker"]
 
 
 
