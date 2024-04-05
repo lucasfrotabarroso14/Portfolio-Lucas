@@ -52,7 +52,7 @@ tagsProjeto03 : Array<string> = ["Back-end","Go","API","Docker"]
   }
 
   downloadCV() {
-    const url = '../assets/curriculo-Lucas.pdf'; // Substitua pela URL do seu currículo
+    const url = '../assets/Cv-Lucas-Barroso.pdf'; // Substitua pela URL do seu currículo
     this.http.get(url, { responseType: 'blob' }).subscribe(blob => {
       saveAs(blob, 'curriculo-lucas.pdf');
     });
