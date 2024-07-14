@@ -40,6 +40,17 @@ linkGithubProjeto03 : string ="https://github.com/lucasfrotabarroso14/VirtualBan
 
 tagsProjeto03 : Array<string> = ["Back-end","Go","API","Docker"]
 
+//------------PROJETO 04----------------------------------
+
+imgProjeto04 : string = "../assets/news.jpg" 
+nomeProjeto04 ="App News"
+
+descricaoDoProjeto04 = "<p>O <strong>App News</strong> é uma app de notícias <strong>mobile</strong> desenvolvida com <strong>Flutter</strong> Com suporte para <strong>iOS</strong> e <strong>Android</strong>, a aplicação utiliza <strong>Cubit</strong> para gerenciamento de estado, <strong>Firebase Auth</strong> para autenticação segura, e integra a <strong>API de notícias News API</strong> para fornecer notícias atualizadas aos usuários.</p>"
+
+linkGithubProjeto04 : string ="https://github.com/lucasfrotabarroso14/news_app_flutter"
+
+tagsProjeto04 : Array<string> = ["Flutter","Mobile","IOS","Android"]
+
 
 
 
